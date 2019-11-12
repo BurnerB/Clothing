@@ -4,18 +4,15 @@ import './App.css';
 
 import Homepage from './pages/homepage.component';
 
+import ShopPage from './pages/shop/shop.component';
 
-const HatsPage = () =>(
-  <div>
-    <h1>HATS PAGE</h1>
-  </div>
-)
+
 function App() {
   return (
     <div>
       <switch>
           <Route exact path='/' component={Homepage}/>
-          <Route exact path='/shop/hats' component={HatsPage}/>
+          <Route exact path='/shop' component={ShopPage}/>
 
       </switch>
     </div>
