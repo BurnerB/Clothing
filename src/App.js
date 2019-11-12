@@ -6,15 +6,18 @@ import Homepage from './pages/homepage.component';
 
 import ShopPage from './pages/shop/shop.component';
 
+import Header from './components/header/header.component';
+
 
 function App() {
   return (
     <div>
-      <switch>
+      <Header></Header>
+      <Switch>
           <Route exact path='/' component={Homepage}/>
           <Route exact path='/shop' component={ShopPage}/>
 
-      </switch>
+      </Switch>
     </div>
   );
 }
