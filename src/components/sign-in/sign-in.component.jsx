@@ -27,6 +27,7 @@ class SignIn extends React.Component {
       this.setState({ email: '', password: '' });
     } catch (error) {
         alert("No Account associated with this information");
+        console.log(error)
     }
   };
 
